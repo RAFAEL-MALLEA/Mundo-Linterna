@@ -1,0 +1,206 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Primera Sección */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(/img/VolandoFLogin.avif) no-repeat center;
+    background-size: cover;
+    padding: 20px; /* Espaciado adicional en pantallas pequeñas */
+}
+
+/* Contenedor */
+.contenedor {
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    height: auto;
+    max-height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Fondo translúcido para mejor visibilidad */
+}
+
+/* Título */
+.contenedor h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-contenedor {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 300px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-contenedor label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 0.9rem;
+    pointer-events: none;
+    transition: 0.6s;
+    font-weight: bold;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+    font-size: 0.8rem;
+}
+
+.input-contenedor input {
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.input-contenedor i {
+    position: absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+
+/* Sección Olvidar */
+.olvidar {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap; /* Soporta múltiples líneas en pantallas pequeñas */
+}
+
+.olvidar label input {
+    margin: 3px;
+}
+
+.olvidar label a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+
+.olvidar label a:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.4s;
+    margin: 15px 0;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Sección Registrar */
+.registrar {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.registrar p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.registrar p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    .contenedor {
+        width: 100%;
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .contenedor h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .olvidar label a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contenedor {
+        padding: 10px;
+        height: auto;
+    }
+
+    .contenedor h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+
+    .input-contenedor input {
+        font-size: 0.9rem;
+    }
+
+    .olvidar {
+        font-size: 0.8rem;
+    }
+
+    .registrar {
+        font-size: 0.8rem;
+    }
+}

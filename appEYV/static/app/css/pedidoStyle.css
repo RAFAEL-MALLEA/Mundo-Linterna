@@ -1,0 +1,181 @@
+/* Navbar */
+.navbar-custom {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 32%, rgba(67, 67, 161, 1) 68%, rgba(26, 5, 187, 1) 100%);
+    padding: 10px 0;
+    height: auto;
+    min-height: 80px; /* Ajustable para pantallas pequeñas */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0 5px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra enlaces en pantallas pequeñas */
+}
+
+/* Botón */
+.btn-custom {
+    background-color: #4343a1 !important;
+    border-color: #4343a1 !important;
+    color: white !important;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #1a05bb !important;
+}
+
+/* Formularios */
+.form-control {
+    border-radius: 5px;
+    height: 32px;
+    font-size: 0.9rem;
+}
+
+.input-group-text {
+    background-color: white;
+    border: none;
+}
+
+.input-group .btn {
+    height: 32px;
+}
+
+/* Footer */
+.footer-custom {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 32%, rgba(67, 67, 161, 1) 68%, rgba(26, 5, 187, 1) 100%);
+    width: 100%;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-custom h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-custom p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.footer-custom .form-control {
+    background-color: #D0DED7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer-custom button {
+    background-color: rgba(67, 67, 161, 1);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.footer-custom button:hover {
+    background-color: rgba(26, 5, 187, 1);
+}
+
+/* Imágenes */
+.footer-custom img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contenedor general */
+.container {
+    margin-top: 40px;
+    padding: 0 15px;
+}
+
+/* Títulos */
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar-custom {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+    }
+
+    .footer-custom {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-custom h5 {
+        font-size: 1rem;
+    }
+
+    .footer-custom p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-custom {
+        padding: 10px 5px;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+
+    .btn-custom {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
+
+    .footer-custom h5 {
+        font-size: 0.9rem;
+    }
+
+    .footer-custom p {
+        font-size: 0.7rem;
+    }
+
+    .footer-custom button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}

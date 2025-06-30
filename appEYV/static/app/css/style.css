@@ -1,0 +1,223 @@
+/* General */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenido principal */
+#content {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar-custom {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 32%, rgba(67, 67, 161, 1) 68%, rgba(26, 5, 187, 1) 100%);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 5px 10px;
+}
+
+/* Botones */
+.btn-custom {
+    background-color: #4343a1 !important;
+    border-color: #4343a1 !important;
+    color: white !important;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #1a05bb !important;
+}
+
+/* Productos */
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    width: calc(100% - 40px);
+    max-width: 300px;
+    margin: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 20px;
+    color: black !important;
+    margin-bottom: 5px;
+}
+
+.btn-cart {
+    background-color: #4343a1 !important;
+    color: white !important;
+    margin-top: 15px;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: gainsboro;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Footer personalizado */
+.footer-custom {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 32%, rgba(67, 67, 161, 1) 68%, rgba(26, 5, 187, 1) 100%);
+    width: 100%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .navbar-custom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-card {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .product-card {
+        max-width: 200px;
+    }
+
+    .btn-custom {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-custom {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Asegúrate de que el contenido principal no colapse con el CSS general */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.payment-section {
+    max-width: 400px; /* Limita el ancho máximo */
+    width: 90%; /* Ajusta a pantallas pequeñas */
+    background-color: #fff;
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajusta el tamaño del precio */
+.price {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
